@@ -1,6 +1,7 @@
 import { } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import logo from '../assets/310f4dfe-6376-41dd-96bb-23ae9eb4743b-removebg-preview.png'
 
 function Nav() {
 
@@ -44,9 +45,16 @@ function Nav() {
         }
     `;
 
+    const IMG = styled.img`
+        width: auto;
+        height: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    `;
+    
     return (
         <HeaderContainer>
-            {/* logo */}
+            <IMG src={logo} alt="logo" />
             <NavList>
                 <NavItem>
                     <NavLinkStyled to="/">Home</NavLinkStyled>

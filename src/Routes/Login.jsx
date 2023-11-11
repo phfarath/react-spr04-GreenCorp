@@ -2,6 +2,7 @@ import { useRef } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import MiniPerfil from './Miniperfil.jsx';
+import dashboard from '../assets/dashboard.png'
 
 const LoginContainer = styled.section`
   width: 100%;
@@ -51,11 +52,25 @@ const LogoutButton = styled.button`
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s ease-in-out;
+  margin-bottom: 2%;
 
   &:hover {
     background-color: #1a2f00;
   }
 `;
+
+const IMG = styled.img`
+width: 70vw;
+height: 70vh;
+`;
+
+const Aviso = styled.p`
+font-size: .7rem;
+color: #920;
+padding-top: 8px;
+margin-bottom: 10px;
+`;
+
 
 
 function Login() {
@@ -90,6 +105,8 @@ function Login() {
       {getUser && getSenha ? (
         <>
         <MiniPerfil username={getUser} />
+        <Aviso>(Imagem meramente ilustrativa)</Aviso>
+        <IMG src={dashboard} alt='exibicao do dashboard'/>
         <LogoutButton onClick={handleLogout}>Logout</LogoutButton>
         </>
       ) : (

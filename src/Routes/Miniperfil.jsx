@@ -5,6 +5,7 @@ const PerfilContainer = styled.div`
   background-color: #fff;
   border: 2px solid #284703;
   border-radius: 10px;
+  margin-top: 2%;
   margin-bottom: 2%;
   padding: 1%;
 `;

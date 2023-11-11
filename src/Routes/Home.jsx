@@ -50,6 +50,7 @@ const Container = styled.div`
   text-align: center;
   gap: 10%;
   min-height: 70vh;
+  background-color: #e3f5e0;
 `;
 
 const Heading = styled.h2`
