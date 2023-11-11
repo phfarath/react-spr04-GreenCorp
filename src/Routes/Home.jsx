@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import styled from 'styled-components';
-import reset from '../Routes/styles/estilo.module.css';
+import {} from '../Routes/styles/estilo.module.css';
 
 const HomeContainer = styled.section`
 `;
@@ -49,7 +49,7 @@ const Container = styled.div`
   padding-bottom: 4%;
   text-align: center;
   gap: 10%;
-  height: 80vh;
+  min-height: 70vh;
 `;
 
 const Heading = styled.h2`
@@ -67,10 +67,10 @@ const ContainerCards = styled.div`
 
 const CardItem = styled.div`
   padding: 20px 0;
-  width: 400px;
+  max-width: 400px;
   margin: 30px 0;
   text-align: center;
-  height: 450px;
+  min-height: 35  0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,6 +99,8 @@ const CardItem = styled.div`
 const P = styled.p`
 font-size: 1.2rem;
 color:#284703;
+padding-right: 10%;
+padding-left: 10%;
 `;
 
 const ImageTitle = styled.p`
@@ -114,7 +116,7 @@ font-weight: bold;
 `;
 
 const Aviso = styled.p`
-font-size: 1rem;
+font-size: .7rem;
 color: #920;
 padding-top: 8px;
 `;
@@ -164,7 +166,7 @@ function Home() {
       </Swiper>
       <Container>
         <Heading>O Projeto</Heading>
-        <P>Desevolvemos este projeto para mudar a forma com que interagimos com a flora, e trazê-la o mais perto possível.</P>
+        <P>Desenvolvemos este projeto para mudar a forma com que interagimos com a flora, e trazê-la o mais perto possível.</P>
         <P>Nossa missão é criar soluções sustentáveis e otimizadoras para o desenvolvimento rural, indoor e caseiro.</P>
         <br></br>
         <Subtitle>Como Funciona?</Subtitle>

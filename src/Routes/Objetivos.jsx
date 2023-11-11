@@ -28,8 +28,8 @@ flex-direction: row;
 
 const Item = styled.div`
 padding: 10px;
-width: 400px;
-height: 20vh;
+max-width: 350px;
+min-height: 20vh;
 text-align: center;
 height: 450px;
 margin-bottom: 3%;
@@ -37,6 +37,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
+border: 1px solid #000;
 gap: 15px;
 border-radius: 15px;
 transition: 0.5s;
@@ -62,31 +63,24 @@ padding-left: 15%;
 `;
 
 
-function Sobre() {
+function Objetivos() {
 
 
     return (
         <>
           <Container>
-      <H1>Desenvolvedores</H1>
-      <P>É com alegria que apresentamos nossa solução inovadora, desenvolvida ao longo do ano para a faculdade FIAP.</P>
+            <H1>Objetivos</H1>
       <ContainerCards>
         <Item>
-          <ItemImage src="./src/assets/foto de perfil.jpg" alt="foto de um dos desenvolvedores" />
-          <H2>Lucca Vilaça Okubo</H2>
+          
         </Item>
         <Item>
-          <ItemImage src="./src/assets/fot do ph.jpeg" alt="foto de um dos desenvolvedores" />
-          <H2>Pedro Henrique Pontes Farath</H2>
+          
         </Item>
         <Item>
-          <ItemImage src="./src/assets/foto do PL.jpeg" alt="foto de um dos desenvolvedores" />
-          <H2>Pedro Lucas de Andrade Nunes</H2>
+          
         </Item>
-        <Item>
-          <ItemImage src="./src/assets/foto do yan.jpeg" alt="foto de um dos desenvolvedores" />
-          <H2>Ian Cancian Nachtergaele</H2>
-        </Item>
+        
         
       </ContainerCards>
     </Container>
@@ -94,4 +88,4 @@ function Sobre() {
     )
 
 }
-export default Sobre;
+export default Objetivos;

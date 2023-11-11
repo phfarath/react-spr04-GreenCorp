@@ -1,4 +1,4 @@
-import React from 'react';
+import {} from 'react';
 import styled from 'styled-components';
 
 const PerfilContainer = styled.div`

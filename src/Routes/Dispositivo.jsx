@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
 width: 100%;
-height: 80vh;
+min-height: 80vh;
 background-color: #e3f5e0;
 display: flex;
 justify-content: center;
@@ -47,7 +47,7 @@ const Item = styled.div`
     transform: scale(1.1);
 
     img{
-      transition: .4s ease-in-out;
+      transition:.4s;
       transform: scale(1.1);
     }
   }
@@ -59,11 +59,13 @@ const ItemImage = styled.img`
   border-radius: 15px;
 `;
 
-const H5 = styled.p`
+const P2 = styled.p`
   font-size: 1.4rem;
   color: #284703;
+  padding-top: 1%;
+  padding-right: 15%;
+  padding-left: 15%;
 `;
-
 
 const P = styled.p`
 padding-top: 2%;
@@ -75,8 +77,8 @@ function MyComponent() {
   return (
     <Container>
       <H1>O dispositivo</H1>
-      <H5>Nesse projeto ultilizamos um DHT11 e um foto-resistor. O DHT11, à esquerda, é um sensor que mede
-        a umidade e a temperatura, já o Foto-resistor, à direita, mede a incidência de luz solar no ambiente.</H5>
+      <P2>Nesse projeto ultilizamos um DHT11 e um foto-resistor. O DHT11, à esquerda, é um sensor que mede
+        a umidade e a temperatura, já o Foto-resistor, à direita, mede a incidência de luz solar no ambiente.</P2>
       <ContainerCards>
         <Item>
           <ItemImage src="./src/assets/dht11.jpeg" alt="Imagem de um dht-11" />

@@ -1,12 +1,12 @@
-import {} from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { } from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 function Nav() {
 
     // styled-components 
     const HeaderContainer = styled.header`
-        background-color: #88b257;
+        background-color: #a7ebb1;
         width: 100%;
         height: 12vh;
         display: flex;
@@ -44,29 +44,18 @@ function Nav() {
         }
     `;
 
-    const LogoutButton = styled.button`
-        background-color: #88b257;
-        color: #fff;
-        padding: 8px 20px;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-        font-size: 1rem;
-        transition: background-color 0.3s ease-in-out;
-
-        &:hover {
-            background-color: #1a2f00;
-        }
-    `;
-
     return (
         <HeaderContainer>
+            {/* logo */}
             <NavList>
                 <NavItem>
                     <NavLinkStyled to="/">Home</NavLinkStyled>
                 </NavItem>
                 <NavItem>
                     <NavLinkStyled to="/dispositivo">O Dispositivo</NavLinkStyled>
+                </NavItem>
+                <NavItem>
+                    <NavLinkStyled to="/objetivos">Os Objetivos</NavLinkStyled>
                 </NavItem>
                 <NavItem>
                     <NavLinkStyled to="/sobre">Sobre</NavLinkStyled>

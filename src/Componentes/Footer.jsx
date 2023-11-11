@@ -1,4 +1,4 @@
-import React from 'react';
+import {} from 'react';
 import { FaFacebookSquare as Face, FaLinkedin as Linkedin, FaInstagramSquare as Insta } from 'react-icons/fa';
 import { MdEmail as Email } from 'react-icons/md';
 import styled from 'styled-components';
@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const FooterContainer = styled.footer`
   width: 100%;
   height: 12vh;
-  background-color: #88b257;
+  background-color: #a7ebb1;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,6 +18,7 @@ const IconList = styled.ul`
   gap: 20px;
   font-size: 30px;
   list-style: none;
+  padding-left: 10%;
 `;
 
 const IconLink = styled.a`
@@ -34,9 +35,16 @@ const IconLink = styled.a`
   }
 `;
 
+const H2= styled.h2`
+font-size: 1.2rem;
+font-weight: bold;
+padding-right: 10%;
+`;
+
 function Footer() {
   return (
     <FooterContainer>
+      <H2>2023 | GreenCorp</H2>
       <IconList>
         <li>
           <IconLink href="#"><Face /></IconLink>

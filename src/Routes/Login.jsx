@@ -1,11 +1,11 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import MiniPerfil from './Miniperfil.jsx';
 
 const LoginContainer = styled.section`
   width: 100%;
-  height: 80vh;
+  min-height: 80vh;
   background-color: #e3f5e0;
   display: flex;
   justify-content: center;

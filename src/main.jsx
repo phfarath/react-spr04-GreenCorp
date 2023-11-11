@@ -7,6 +7,7 @@ import Home from './Routes/Home.jsx';
 import Login from './Routes/Login.jsx';
 import Dispositivo from  './Routes/Dispositivo.jsx'
 import Sobre from './Routes/Sobre.jsx';
+import Objetivos from './Routes/Objetivos.jsx';
   
 
 
@@ -20,6 +21,7 @@ const router = createBrowserRouter([
       { path: '/', element: <Home /> },
       { path: '/login', element: <Login/> },
       { path: '/dispositivo', element: <Dispositivo /> },
+      { path: '/objetivos', element: <Objetivos /> },
       { path: '/sobre', element: <Sobre /> },
     ],
   },
